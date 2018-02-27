@@ -1,4 +1,4 @@
-function createTemplate(options, messages) {
+exports.createTemplate = (options, messages) => {
   const {
     openForums,
     openNewBugForm,
@@ -152,7 +152,7 @@ function createTemplate(options, messages) {
   }
 
   return template;
-}
+};
 
 function updateForMac(template, messages, options) {
   const {
@@ -272,5 +272,3 @@ function updateForMac(template, messages, options) {
 
   return template;
 }
-
-module.exports = createTemplate;
